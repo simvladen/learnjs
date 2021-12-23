@@ -38,6 +38,40 @@ someFn(users);
 
 
 
+//todo2---------------------------------------------
+
+const initialData = [
+  {
+    username: 'Maria',
+    age: 25,
+  },
+  {
+    username: 'Alex',
+    age: 21,
+  },
+  {
+    username: 'Oleg',
+    age: 14,
+  },
+  {
+    username: 'Dmitriy',
+    age: 35,
+  },
+  {
+    username: 'Oksana',
+    age: 72,
+  },
+];
+
+
+const someFn = function (arr) {
+  	let sorted = arr.filter(item => item.age >= 21);
+   return sorted.sort((a, b) => a.username > b.username ? 1 : -1);
+};
+
+
+console.log(someFn(initialData));
+
 
 //todo3---------------------------------------------
 
